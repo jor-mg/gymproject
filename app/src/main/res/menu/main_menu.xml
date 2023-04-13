@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+    <group android:checkableBehavior="single">
+        <item android:title="General"
+            >
+        <menu>
+        <item
+            android:id="@+id/nav_cliente"
+            android:title="Perfil"
+            android:icon="@drawable/ic_cliente"
+            />
+        <item
+            android:id="@+id/nav_pedido"
+            android:title="Pedidos"
+
+            android:icon="@drawable/ic_membresia"
+            />
+        <item
+            android:id="@+id/nav_membresia"
+            android:title="Membresias"
+            android:icon="@drawable/ic_tipo_m3"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/nav_pago"
+            android:title="Pago"
+            android:icon="@drawable/ic_pago"
+            />
+        <item
+            android:id="@+id/nav_objetivo"
+            android:title="Objetivos"
+            android:icon="@drawable/ic_classssss"
+            />
+
+        </menu>
+
+        </item>
+    </group>
+
+    <group
+        android:checkableBehavior="single">
+        <item android:title="Configuración">
+            <menu>
+                <item
+                    android:id="@+id/nav_pass"
+                    android:title="Cambiar contraseña"
+                    android:icon="@drawable/ic_contrasena"
+                    />
+            <item
+            android:id="@+id/nav_salir"
+            android:title="Cerrar sesión"
+                android:icon="@drawable/salir"
+            />
+            </menu>
+        </item>
+    </group>
+</menu>

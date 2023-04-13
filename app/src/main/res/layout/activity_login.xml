@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log2in"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/aa4521523"
+        android:layout_width="220dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/fuente_p"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.12"
+        android:text="¡Hola!"
+        android:textColor="#8BC34A"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aa452152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953" />
+
+    <TextView
+        android:id="@+id/aa452152"
+        android:layout_width="220dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/fuente_p"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.12"
+        android:text="INGRESE SUS DATOS"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtusuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
+
+    <EditText
+        android:id="@+id/txtusuario"
+        android:layout_width="357dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/user"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/user"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtcontraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="324dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="1dp"
+        android:text="El usuario o la contraseña no son válidos"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/txtcontraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtusuario"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtcontraseña"
+        android:layout_width="357dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="280dp"
+        android:layout_weight="1"
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/pass"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/passw"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgcontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtcontraseña"
+        app:layout_constraintEnd_toEndOf="@+id/txtcontraseña"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="@+id/txtcontraseña"
+        app:layout_constraintTop_toTopOf="@+id/txtcontraseña"
+        app:layout_constraintVertical_bias="0.523"
+        app:srcCompat="@drawable/ic_baseline_remove_red_eye_24" />
+
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="324dp"
+        android:layout_height="21dp"
+        android:text="El usuario o la contraseña no son válidos"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcontraseña"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtnombrecito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtidcliente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/apellidito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="357dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="150dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_style"
+        android:text="ENTRAR"
+
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcontraseña"
+        app:layout_constraintVertical_bias="0.663" />
+
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_back3"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcomprarmembresia"
+        android:layout_width="170dp"
+        android:layout_height="21dp"
+        android:visibility="gone"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32.9dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="ADQUIRIR MEMBRESÍA"
+        android:fontFamily="@font/fuente_p"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnredesfb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+
+        android:drawableStart="@drawable/rs_fb"
+        android:drawableLeft="@drawable/rs_fb"
+        android:paddingLeft="11dp"
+        android:paddingRight="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+        app:layout_constraintVertical_bias="0.60
+        " />
+
+    <Button
+        android:id="@+id/btnredeswsp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+
+        android:drawableStart="@drawable/rs_wsp"
+        android:drawableLeft="@drawable/rs_wsp"
+        android:paddingLeft="12dp"
+        android:paddingRight="11dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+        app:layout_constraintVertical_bias="0.60
+        " />
+
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="324dp"
+        android:layout_height="21dp"
+
+        android:layout_marginBottom="22dp"
+        android:gravity="center_horizontal"
+        android:text="Contáctanos"
+        android:fontFamily="@font/fuente_p"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="324dp"
+        android:layout_height="21dp"
+
+        android:layout_marginBottom="22dp"
+        android:gravity="center_horizontal"
+        android:text="Contáctanos"
+
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnredesig"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_button"
+
+        android:drawableStart="@drawable/rs_ig"
+        android:drawableLeft="@drawable/rs_ig"
+        android:paddingLeft="12dp"
+        android:paddingRight="11dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+        app:layout_constraintVertical_bias="0.60
+        " />
+
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logorayyy" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

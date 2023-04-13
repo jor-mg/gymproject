@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+
+    android:gravity="center">
+
+
+
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="350dp"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:id="@+id/txtcant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="aaaa" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Selecciona la cantidad de pasos" />
+
+        <NumberPicker
+            android:id="@+id/numberpickerpasos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btncancelarpasos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="  Cancelar "
+                android:textColor="@color/white"
+                android:background="@drawable/btn_style_2"
+                android:layout_marginRight="19dp"
+                />
+
+            <Button
+                android:id="@+id/btnconfirmarpasos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_style_2"
+                android:text="Confirmar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

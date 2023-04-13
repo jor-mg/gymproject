@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "41810124344",
+    "project_id": "raynergym",
+    "storage_bucket": "raynergym.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41810124344:android:42a6875fc1c3c0ced250cd",
+        "android_client_info": {
+          "package_name": "com.example.gymproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41810124344-uf06b42pcq108qt1mbuvneqin0l5ti3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsP-B4D_el5Lv9uAf4AV4R_QqimPOVND0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41810124344-uf06b42pcq108qt1mbuvneqin0l5ti3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

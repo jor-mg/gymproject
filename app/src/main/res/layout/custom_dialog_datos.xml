@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="865dp"
+    android:id="@+id/relative"
+    android:gravity="center"
+    android:background="@drawable/background_input"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal">
+
+
+
+    <ImageView
+        android:id="@+id/usuario"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        app:srcCompat="@drawable/ic_money"
+        />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATOS DEL PAGO"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="100dp"
+
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/vacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="00"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/round_textview"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutnombrecito"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/usuario"
+        android:background="@color/colorDivider"
+
+
+        android:layout_marginTop="7dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/user9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Nombre completo"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/dni9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="DNI"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/layoutnombrecito"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="176dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutnombrecito"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Código de membresia"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Tipo de membresia"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Clase"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Ciclos"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Monto"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="176dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutnombrecito"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+
+
+        <TextView
+            android:id="@+id/mem9"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="..."
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tip9"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="..."
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cla9"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="..."
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/cic9"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="..."
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/mon9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="..."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

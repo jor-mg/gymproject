@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/drinkNameinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="110dp"
+        android:text="Proteina 100 mg"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkNameinOrderSummary"
+        android:textSize="16sp"
+        android:layout_marginLeft="110dp"
+        android:text="Precio unitario :" />
+
+
+    <TextView
+        android:id="@+id/priceinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkNameinOrderSummary"
+        android:layout_marginLeft="230dp"
+
+        android:text="s/10"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceinOrderSummary"
+        android:layout_marginLeft="110dp"
+        android:text="Cantidad           :"
+                android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/quantityinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceinOrderSummary"
+        android:layout_marginLeft="230dp"
+        android:text="x"
+
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

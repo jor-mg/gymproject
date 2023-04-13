@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfefc"
+    tools:context=".adapter.CarritoDeCompra.ConfirmPagoDesign">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifconfirm"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="140dp"
+        android:src="@drawable/check_confirm" />
+
+    <TextView
+        android:id="@+id/txtpedidorealizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gifconfirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:letterSpacing="0.2"
+        android:text="PEDIDO REALIZADO"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtpedidorealizado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpedidorealizado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Seguir comprando"
+        android:textColor="@color/principal" />
+
+
+</RelativeLayout>

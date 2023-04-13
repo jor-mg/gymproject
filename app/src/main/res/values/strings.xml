@@ -1,0 +1,76 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="MyMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="BoldTitleTextTheme">
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SecondaryTextTheme">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <string name="user">Usuario</string>
+    <string name="passw">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Registro</string>
+    <string name="tab_text_2">Lista</string>
+    <string name="title_activity_registrar_cliente">RegistrarCliente</string>
+    <string name="nave_open">Abrir navegador</string>
+    <string name="nave_close">Cerrar navegador</string>
+
+    <string name="hintSearchMess">Nombre del producto</string>
+
+    <!-- String resources related to menus -->
+    <string name="settings_title">Settings</string>
+    <string name="notifications_title">Notifications</string>
+
+    <style name="customRatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/principal</item>
+        <item name="colorControlActivated">@color/principal</item>
+
+    </style>
+
+
+    <style name="RatingBar.Yellow" parent="Theme.AppCompat">
+
+        <item name="colorControlNormal">@color/principal</item>
+        <item name="colorControlActivated">@color/principal</item>
+    </style>
+
+
+    <style name="ThemeOverlay.Toobar" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Text color -->
+        <item name="android:editTextColor">@color/white</item>
+        <!-- Hint text color -->
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ubicacion_cliente">UbicacionCliente</string>
+    <string name="title_activity_ubicacion_pedido">UbicacionPedido</string>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">#FFF</item>
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">@color/principal</item>
+
+    </style>
+</resources>

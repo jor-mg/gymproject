@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UbicacionPedido">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/dashboard_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:titleTextColor="@color/white"
+            android:elevation="4dp"
+            app:title="Mi dirección"
+            android:theme="@style/ThemeOverlay.Toobar"
+            app:navigationIcon="@drawable/ic_volver_atras"
+            app:subtitleTextColor="@color/black"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        tools:context=".UbicacionPedido" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:text="Ubicación actual"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <EditText
+
+            android:id="@+id/txtlati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitud"
+            android:visibility="gone" />
+
+        <EditText
+
+            android:id="@+id/txtlong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitud"
+            android:visibility="gone" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:padding="12dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/san_francisco"
+                android:text="¿A dónde lo llevamos?"
+                android:textColor="@color/principal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/san_francisco"
+                android:text="Indica tu dirección con el siguiente formato:\nNombre Avenida/#Número/Ciudad"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+
+            <EditText
+                android:id="@+id/txtnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Urb. 21 de Abril Mz.B10 Lt.38, Chimbote"
+                android:fontFamily="@font/san_francisco"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/san_francisco"
+                android:layout_marginTop="10dp"
+                android:text="Oficina / apartamento / piso"
+                android:textColor="@color/principal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtnombre2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ejm: Ofic. 101 / Dpto. 43 / 2do. piso"
+                android:fontFamily="@font/san_francisco"
+                />
+
+            <Button
+                android:id="@+id/btncontinuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:fontFamily="@font/san_francisco"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@color/principal"
+                android:text="Continuar"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
